@@ -397,13 +397,14 @@ ul.redes li a {
 
 
 
-@media  screen and (max-width: 578px){
 
-    .ubicacion {
+@media only screen and (max-width: 668px){
+    .contenedor-home-ubicacion {
         margin: auto;
         margin-top: 3rem;
     }
 }
+
 .parrafo_banner_home{
     display: flex;
     justify-content: center;
@@ -418,29 +419,39 @@ ul.redes li a {
   
 }
 
-@media only screen and (max-width: 768px){
-    .contenedor_home{
+@media only screen and (max-width: 668px){
+    .contenedor-home{
         width: 100%;
         display: flex;
         justify-content: center;
-        gap: 3rem;
+        margin:  auto;
+        max-width: 1200px;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (min-width: 669px){
+    .contenedor-home{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20rem;
         margin: 5% auto;
         max-width: 1200px;
         flex-wrap: wrap;
     }
 }
 
-@media only screen and (min-width: 769px){
-    .contenedor_home{
-        width: 100%;
+@media only screen and (max-width: 668px){
+    .contenedor-home-caja{
         display: flex;
         justify-content: center;
-        gap: 300px;
+        align-items: center;
         margin: 5% auto;
-        max-width: 1200px;
-        flex-wrap: wrap;
+        width: 100%;
     }
 }
+
 
 /*estilos seguros*/
 
