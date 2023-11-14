@@ -1,1079 +1,725 @@
-/* estilos de fuentes*/
-
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Mooli&display=swap');
-
-  
-   /*breck point*/
-  /* @media only screen and (max-width:  500px){
-
-
-   }  
-*/
-
-  /*
-font-family: 'Montserrat', sans-serif;
-font-family: 'Mooli', sans-serif;
-*/
-
-
-/* general  inicio*/
-
-html{
-    font-size: 62.5%;
-
+@charset "UTF-8";
+/* fuentes */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Mooli&display=swap");
+.btn {
+  border: 1px solid #786b5e;
+  font-size: 2rem;
+  width: 100%;
 }
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-/*encabezado*/
-.encabezado{
-    width: 100%;
-    height: 100%;
-    background-color: #c6a664;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    flex-wrap: wrap;
-    gap:0.5rem 50rem;
-    margin: 0 auto;
-    max-width: 1200px;
-    
+.boton {
+  background-color: #786b5e;
 }
 
-  
-@media only screen and (max-width: 768px){
-    .carousel{
-        max-width: 1200px;
-        margin: auto;
-        margin-top: 7rem;
-    }
+.boton:hover {
+  background-color: #c6a664;
+  border: 1px solid #786b5e;
 }
 
-@media only screen and (min-width: 769px) {
-    .carousel{
-        max-width: 1200px;
-        margin: auto;
-    }
+html {
+  font-size: 62.5%;
 }
 
-
-
-
-
-@media only screen and (max-width: 768px){
-    .navbar{
-        max-width: 1200px;
-        margin: auto;
-    }
-    /*
-    .contenedor_logo{
-        width: 50%;
-        height: 100%;
-        border: 2px solid black;
-    }*/
-
-    .logo{
-        filter: sepia(80%);
-        width: 70%;
-        height: 70%;
-        /*filter: opacity(0%);*/   
-    }
-    
-
-
-    .container-fluid{
-        background-color: #c6a664;
-        
-    }
-    /*
-    .navbar-toggler{
-    
-    }
-    */
-    .navbar-toggler:hover{
-        border: 2px solid beige 
-        
-    }
-    .navbar-toggler:focus{/*anulo el focus que aplica boostrap sobre el borde del boton menu cuando se agrupa*/
-        color:beige;
-    }
-
-    .offcanvas-end{
-        background-color: beige;
-    }
-
-    .nav-link{
-        margin-left: 20px;
-        text-align: right;
-        transition: all 1s ease-in-out; /* convierte puntero en mano*/
-        font-family: 'Mooli', sans-serif;
-        font-size: 1.5rem;
-    
-    }
-    .nav-link:hover{  /* para darle estilo al link cuando se le pasa por arriba con el puntero*/
-        border-bottom: 2px solid #786b5e ;
-        color: beige
-    }
-
-    ul {
-        list-style-type: none;
-    }
-
-    a {
-        text-decoration: none;
-        color: black;
-    }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-@media only screen and (min-width: 767px){
-    .navbar{
-        max-width: 1200px;
-        margin: auto;
-
-    }
-    /*
-    .contenedor_logo{
-        width: 50%;
-        height: 100%;
-        border: 2px solid black;       
-    }*/
-    .logo{
-        filter: sepia(80%);
-        
-    }
-        
-    
-    .container-fluid{
-        background-color: #c6a664;
-        
-    }
-    /*
-    .navbar-toggler{
-       
-    }
-    */
-    .navbar-toggler:hover{
-        border: 2px solid beige 
-        
-    }
-    .navbar-toggler:focus{/*anulo el focus que aplica boostrap sobre el borde del boton menu cuando se agrupa*/
-        color:beige;
-    }
-    
-    .offcanvas-end{
-        background-color: beige;
-    }
-    
-    .nav-link{
-        margin-left: 20px;
-        text-align: right;
-        transition: all 1s ease-in-out; /* convierte puntero en mano*/
-        font-family: 'Mooli', sans-serif;
-        font-size: 1.5rem;
-       
-    }
-    .nav-link:hover{  /* para darle estilo al link cuando se le pasa por arriba con el puntero*/
-        border-bottom: 2px solid #786b5e ;
-        color: beige
-    }
-    
-    ul {
-        list-style-type: none;
-    }
-    
-    a {
-        text-decoration: none;
-        color: black;
-    }
-    }
-
-
-
-
-
-
-
-
-
-/*body*/
-.cuerpo{
-    background-color: #ece2c6;
-    width: 100%;
-}
-/*botones*/
-
-
-/* formularios*/
-.contenedor-formulario-cotizar{
-    margin-top: 5%;
-    margin-bottom: 10%;
+ul {
+  list-style-type: none;
 }
 
-.formulario{
-    max-width: 1200px;
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.logo {
+  filter: sepia(80%);
+}
+
+@media screen and (max-width: 578px) {
+  .titulo {
+    font-family: "Mooli", sans-serif;
+    font-size: 2rem;
+    text-align: center;
     margin: auto;
-    
+    margin-top: 2.5%;
+    max-width: 580px;
+  }
+}
+@media screen and (min-width: 579px) {
+  .titulo {
+    font-family: "Mooli", sans-serif;
+    font-size: 3.5rem;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    max-width: 1200px;
+  }
+}
+.card-body {
+  background-color: #786b5e;
+  width: 18rem;
+  height: 18rem;
+}
+
+.nombre_tarjeta {
+  font-size: 3rem;
+  color: beige;
+  border-bottom: 1px solid beige;
+  margin-top: 5%;
+}
+
+.card-text {
+  font-size: 1.5rem;
+  color: beige;
+}
+
+.card-text1 {
+  font-size: 2rem;
+  margin-top: 10%;
+  color: beige;
+}
+
+.contenedor-formulario-cotizar {
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.formulario {
+  max-width: 1200px;
+  margin: auto;
 }
 
 /* campos formulario*/
-
-.campos-formularios{
-     size:  100px;
+.campos-formularios {
+  size: 100px;
 }
 
-
-
-
-.form-floating{
-    height: 4rem;
+.form-floating {
+  height: 4rem;
 }
-
 
 /* define la fuente de los label de los formularios*/
-.label-formularios{
-    font-size: 1.5rem;
-    font-family: 'Mooli', sans-serif;
+.label-formularios {
+  font-size: 1.5rem;
+  font-family: "Mooli", sans-serif;
 }
 
-
-.floatingInput{
- height: 2rem;
+.floatingInput {
+  height: 2rem;
 }
 
 /* separa los campos de los formularios*/
-.row-sm{
-    margin-top: 1rem;
+.row-sm {
+  margin-top: 1rem;
 }
 
-.fila{
-    margin-bottom: 2.5rem;
+.fila {
+  margin-bottom: 2.5rem;
 }
-
 
 /* aumenta el tamaño de la fila de el campo
  consulta de los formulario*/
-.row-campo-consulta{
-    height: 12rem;
+.row-campo-consulta {
+  height: 12rem;
 }
 
-
-.campo{
-    background-color:#c0b8a2 ;
-}    
-
-.nombre_campos{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+.campo {
+  background-color: #c0b8a2;
 }
-/* boton enviar formularios*/
-/*
-.boton_enviar{
-    background-color: #786b5e;
-    font-family: 'Montserrat', sans-serif;
-    color: beige ;
- 
+
+.nombre_campos {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
 }
-/*
-.boton-enviar-formularios{
-    justify-content: end;
-} 
-*/
 
 .btn {
-    font-size: 2rem;
-    width: 100%;
+  border: 1px solid #786b5e;
+  font-size: 2rem;
+  width: 100%;
 }
 
-/*banner  cotizar auto y finanzas*/
-
-/*
-.contenedor_texto_banner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.boton {
+  background-color: #786b5e;
 }
 
-
-*/
-
-
-@media screen and (max-width: 578px){
-    .titulo{
-        font-family: 'Mooli', sans-serif;
-        font-size: 2rem;
-        text-align: center;
-        margin:  auto;
-        margin-top: 2.5%;
-        max-width: 580px;
+.boton:hover {
+  background-color: #c6a664;
+  border: 1px solid #786b5e;
 }
 
+.cuerpo {
+  background-color: #ece2c6;
 }
 
-@media screen and (min-width: 579px){
-    .titulo{
-        font-family: 'Mooli', sans-serif;
-        font-size: 3.5rem;
-        text-align: center;
-        margin:  auto;
-        margin-top: 5%;
-        max-width: 1200px;
+.encabezado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  background-color: #c6a664;
+  gap: 0.5rem 50rem;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
-}
-/* general fin */
-
-/*footer*/
-
-.pie_pagina{
-    width: 100%;
+@media only screen and (max-width: 768px) {
+  .carousel {
     max-width: 1200px;
-    border-top: 6px solid whitesmoke;
-    display: flex;
-    justify-content: center;
-    gap: 50%;
-    margin: 0 auto;
-    flex-wrap: wrap;
-
+    margin: auto;
+    margin-top: 7rem;
+  }
 }
-
-ul.redes li a {
-    color: black;
+@media only screen and (min-width: 769px) {
+  .carousel {
+    max-width: 1200px;
+    margin: auto;
+  }
 }
-
-.redes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-
-
-.facebook, .instagram, .whatsapp{
-    font-size: 2.8rem;
-    color: white;
-    border-radius: 9px;
-}
-
-.facebook{
-    background-color: rgb(37, 37, 157);
-}
-.whatsapp{
-    background-color: #00bb2d;
-   
-}
-.instagram{
-    background: radial-gradient(circle at  30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)
-
-}
-
-/* estilo de home */
-
-@media  screen and (max-width: 578px){ 
-    .parrafo{
-        font-family: 'Montserrat', sans-serif; 
-        font-size: 1.5rem;
-        margin:  auto;
-        text-align: center;
-        margin-top: 1.5%;
-    }
-}
-
-@media screen and (min-width: 579px){
-    .parrafo{
-        font-family: 'Montserrat', sans-serif; 
-        font-size: 2.5rem;
-        margin:  auto;
-        text-align: center;
-        max-width: 1200px;
-        margin-top: 5%;
-    }
-}
-       
-
-
-
-
-@media only screen and (max-width: 668px){
-    .contenedor-home-ubicacion {
-        margin: auto;
-        margin-top: 3rem;
-    }
-}
-
-.parrafo_banner_home{
-    display: flex;
-    justify-content: center;
-    font-family: 'Mooli', sans-serif;
-    font-size: 5rem;
-    font-weight: 300;
-    width: 100%;
-    height: 350px;
-    text-align: center;
+@media only screen and (max-width: 768px) {
+  .navbar {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .logo {
+    filter: sepia(80%);
+    width: 70%;
+    height: 70%;
+  }
+  .container-fluid {
+    background-color: #c6a664;
+  }
+  .navbar-toggler:hover {
+    border: 2px solid beige;
+  }
+  .navbar-toggler:focus { /*anulo el focus que aplica boostrap sobre el borde del boton menu cuando se agrupa*/
     color: beige;
-    margin-top: 10%;
-  
-}
-
-@media only screen and (max-width: 668px){
-    .contenedor-home{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin:  auto;
-        max-width: 1200px;
-        flex-wrap: wrap;
-    }
-}
-
-@media only screen and (min-width: 669px){
-    .contenedor-home{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        gap: 20rem;
-        margin: 5% auto;
-        max-width: 1200px;
-        flex-wrap: wrap;
-    }
-}
-
-@media only screen and (max-width: 668px){
-    .contenedor-home-caja{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 5% auto;
-        width: 100%;
-    }
-}
-
-
-/*estilos seguros*/
-
-.card-body {
-    background-color: #786b5e;
-    width: 18rem;
-    height: 18rem;
-}
-.nombre_tarjeta{
-    font-size: 3rem;
-    color:beige;
-    border-bottom: 1px solid  beige;
-    margin-top: 5%;
-}
-
-.card-text{
+  }
+  .offcanvas-end {
+    background-color: beige;
+  }
+  .nav-link {
+    margin-left: 20px;
+    text-align: right;
+    transition: all 1s ease-in-out; /* convierte puntero en mano*/
+    font-family: "Mooli", sans-serif;
     font-size: 1.5rem;
+  }
+  .nav-link:hover { /* para darle estilo al link cuando se le pasa por arriba con el puntero*/
+    border-bottom: 2px solid #786b5e;
     color: beige;
-
+  }
+  ul {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+@media only screen and (min-width: 767px) {
+  .navbar {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .container-fluid {
+    background-color: #c6a664;
+  }
+  .navbar-toggler:hover {
+    border: 2px solid beige;
+  }
+  .navbar-toggler:focus { /*anulo el focus que aplica boostrap sobre el borde del boton menu cuando se agrupa*/
+    color: beige;
+  }
+  .offcanvas-end {
+    background-color: beige;
+  }
+  .nav-link {
+    margin-left: 20px;
+    text-align: right;
+    transition: all 1s ease-in-out; /* convierte puntero en mano*/
+    font-family: "Mooli", sans-serif;
+    font-size: 1.5rem;
+  }
+  .nav-link:hover { /* para darle estilo al link cuando se le pasa por arriba con el puntero*/
+    border-bottom: 2px solid #786b5e;
+    color: beige;
+  }
+  ul {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+.pie_pagina {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  border-top: 6px solid whitesmoke;
+  gap: 50%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.pie_pagina-redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.pie_pagina-redes-facebook, .pie_pagina-redes-whatsapp, .pie_pagina-redes-instagram {
+  font-size: 2.8rem;
+  color: white;
+  border-radius: 9px;
+}
+.pie_pagina-redes-facebook {
+  background-color: rgb(37, 37, 157);
+}
+.pie_pagina-redes-whatsapp {
+  background-color: #00bb2d;
+}
+.pie_pagina-redes-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
 
-.card-text1{
-    font-size: 2rem;
-    margin-top: 10%;
-    color: beige;
+@media screen and (max-width: 578px) {
+  .titulo {
+    margin: auto;
+  }
+  .parrafo {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 1.5%;
+  }
 }
-/*
-.banner_seguros{
+@media screen and (min-width: 579px) {
+  .titulo {
+    margin: 0, auto;
+  }
+  .parrafo {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+    margin: auto;
+    text-align: center;
+    max-width: 1200px;
+    margin-top: 5%;
+  }
+}
+@media only screen and (max-width: 668px) {
+  .contenedor-home-ubicacion {
+    margin: auto;
+    margin-top: 3rem;
+  }
+}
+.parrafo_banner_home {
+  display: flex;
+  justify-content: center;
+  font-family: "Mooli", sans-serif;
+  font-size: 5rem;
+  font-weight: 300;
+  width: 100%;
+  height: 350px;
+  text-align: center;
+  color: beige;
+  margin-top: 10%;
+}
+
+@media only screen and (max-width: 668px) {
+  .contenedor-home {
+    width: 100%;
     display: flex;
     justify-content: center;
-    gap: 2rem 10rem ;
-    width: 100%;
-    height: 100%;
-    background-color: #786b5e ;
-    background-position: content;
-    max-width: 1200px;
-    margin: 0 auto;
     flex-wrap: wrap;
+    margin: auto;
+    max-width: 1200px;
+  }
 }
-*/
-
-.contenedor_texto_banner_seguros{
+@media only screen and (min-width: 669px) {
+  .contenedor-home {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20rem;
+    margin: 5% auto;
+    max-width: 1200px;
+  }
+}
+@media only screen and (max-width: 668px) {
+  .contenedor-home-caja {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-/*
-.texto_banner_seguros{  
-    color: beige;
-    text-justify:center;
-    font-family: 'Mooli', sans-serif;
-    font-size: 4rem;
-    margin: 2px auto;
-    text-align: center;
-    width: 100%; 
-    }
-*/
-/*
-.cuadro_imagen_seguros{
-    margin-left: 0;
-}
-*/
-/*
-.imagen_seguros{
-    filter: sepia(50%);
+    margin: 5% auto;
     width: 100%;
-    min-width: 500px;
-    height: 100%;
-    max-height: 500px;
-    margin: 0 auto;
-    margin-left: 0.9rem;
+  }
 }
-*/
-
-/*botones de link a los formularios */
-
-.contenedor_seguros{
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    gap: 1rem 10rem;
-    flex-wrap: wrap;
-    margin-bottom: 2rem;
-    margin-top: 5%;
+.contenedor_seguros {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 1rem 10rem;
+  margin-bottom: 2rem;
+  margin-top: 5%;
 }
-
-
-
-
-
 
 .boton_seguros {
-    background-color: #786b5e;
-    width: 11rem;
-    height: 10rem;
-    font-size: 2rem;
-    border: none;
-    border-style: outset;
-    font-size: rem;
-    font-family: 'Montserrat', sans-serif;
-    color: beige;
+  background-color: #786b5e;
+  width: 11rem;
+  height: 10rem;
+  font-size: 2rem;
+  border: none;
+  border-style: outset;
+  font-family: "Montserrat", sans-serif;
+  color: beige;
 }
 
-.ubicacion{
-    margin-bottom: 10%;
+.ubicacion {
+  margin-bottom: 10%;
 }
 
-/*estilo de cotizar auto */
-
-
-/*
-.banner{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     width: 100%;
-     height: 100%;
-     background-color: #786b5e ;
-     max-width: 1200px;
-     margin:  auto;
-     flex-wrap: wrap;
-     margin-top: 5%;
-    /*  display: flex;
+@media only screen and (max-width: 768px) {
+  .banner {
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2px 18rem;
+    flex-wrap: wrap;
+    gap: 2px;
     width: 100%;
     height: 100%;
-    background-color: #414c3b ;
-    max-width: 1200px;
-    margin:  auto;
-    flex-wrap: wrap;
-    margin-top: 5rem;
-}
- }
- 
- .cuadro_imagen{
-    width: 50%;
-    height: 100%;
-    margin: auto; 
-    flex-flow: row wrap;
-    width: 50%;
+    background-color: #786b5e;
+    margin: auto;
+    margin-top: 7rem;
+  }
+  .cuadro_imagen {
+    width: 100%;
     margin-left: 0;
- }
-
- .imagen_banner_cotizar{
+  }
+  .imagen_banner_cotizar {
     margin: auto;
     filter: sepia(50%);
     width: 100%;
     height: 100%;
-    max-width: 1000px;
+    max-width: 100%;
+    min-width: 400px;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .texto_banner {
+    color: beige;
+    text-justify: center;
+    font-family: "Mooli", sans-serif;
+    font-size: 0;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    width: 100%;
+  }
+}
+@media only screen and ((min-width: 769px) and (max-width: 1176px)) {
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2px 18rem;
+    width: 100%;
+    height: 100%;
+    background-color: #786b5e;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 5rem;
+  }
+  .cuadro_imagen {
+    width: 100%;
+    margin-left: 0;
+  }
+  .imagen_banner_cotizar {
+    margin: auto;
+    filter: sepia(50%);
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    min-width: 400px;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .texto_banner {
+    color: beige;
+    text-justify: center;
+    font-family: "Mooli", sans-serif;
+    font-size: 0;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    width: 100%;
+  }
+}
+@media only screen and ((min-width: 1177px)) {
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2px 18rem;
+    width: 100%;
+    height: 100%;
+    background-color: #786b5e;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 5rem;
+  }
+  .cuadro_imagen {
+    width: 49%;
+    margin-left: 0;
+  }
+  .imagen_banner_cotizar {
+    margin: auto;
+    filter: sepia(50%);
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    min-width: 400px;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .cuadro_texto_cotizar {
+    width: 34%;
+    display: flex;
+    margin-right: 2rem;
+  }
+  .texto_banner {
+    color: beige;
+    text-justify: center;
+    font-family: "Mooli", sans-serif;
+    font-size: 2rem;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    width: 100%;
+  }
+}
+.formulario {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.titulo_cotizar {
+  display: flex;
+  justify-content: center;
+  font-family: "Mooli", sans-serif;
+}
+
+.frase-imagen {
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner_finanzas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2px 18rem;
+    width: 100%;
+    height: 100%;
+    background-color: #414c3b;
+    margin: auto;
+    margin-top: 7rem;
+  }
+  .cuadro_imagen_finanzas {
+    width: 100%;
+    margin-left: 0;
+  }
+  .imagen_finanzas {
+    margin: auto;
+    filter: sepia(50%);
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    min-width: 400px;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .texto_banner_finanzas {
+    color: beige;
+    text-justify: center;
+    font-family: "Mooli", sans-serif;
+    font-size: 0;
+    margin: 0 auto;
+    display: flex;
+    gap: nnull;
+    text-align: center;
+    width: 100%;
+  }
+  .contenedor_finanzas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2px 10rem;
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    max-height: 1000px;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1176px) {
+  .banner_finanzas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2px 18rem;
+    width: 100%;
+    height: 100%;
+    background-color: #414c3b;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 5rem;
+  }
+  .cuadro_imagen_finanzas {
+    width: 100%;
+    margin-left: 0;
+  }
+  .imagen_finanzas {
+    margin: auto;
+    filter: sepia(50%);
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    min-width: 400px;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .texto_banner_finanzas {
+    color: beige;
+    text-justify: center;
+    font-family: "Mooli", sans-serif;
+    font-size: 0;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    width: 100%;
+  }
+  .contenedor_finanzas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2px 10rem;
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    max-height: 1000px;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+}
+@media only screen and (min-width: 1177px) {
+  .banner_finanzas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2px 18rem;
+    width: 100%;
+    height: 100%;
+    background-color: #414c3b;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 5rem;
+  }
+  .cuadro_imagen_finanzas {
+    width: 50%;
+    width: 50%;
+    margin-left: 0;
+  }
+  .imagen_finanzas {
+    margin: auto;
+    filter: sepia(50%);
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
     min-width: 400px;
     max-height: 400px;
     display: flex;
     justify-content: center;
-}
-
-.cuadro_texto_cotizar{
-    background-color: #786b5e;
-    width: 50%;
-    height: 100%;
-    margin: auto;
-    margin-top: 5%;
-    flex-flow: row wrap;
-    
-
+    margin-left: 0;
+  }
+  .contenedor_texto_banner {
+    width: 33%;
     width: 33%;
     display: flex;
     margin-right: 2rem;
-}
-
-.texto_banner{  
+  }
+  .texto_banner_finanzas {
     color: beige;
     text-justify: center;
-    font-family: 'Mooli', sans-serif;
-    font-size: 3rem;
-    margin:  10% 0% 5% 0%;
-    text-align: center;
-    width: 100%; 
+    font-family: "Mooli", sans-serif;
+    font-size: 2rem;
+    margin: 0 auto;
     display: flex;
     text-align: center;
-    
- }
-*/
-
-@media only screen and (max-width:768px){
-    .banner{
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       gap: 2px 18rem;
-       width: 100%;
-       height: 100%;
-       background-color: #786b5e ;
-       
-       margin:  auto;
-       flex-wrap: wrap;
-       margin-top: 7rem;
-   }
-   
-   .cuadro_imagen{
-       width: 100%;
-       margin-left: 0;
-       
-      }
-   
-   
-   .imagen_banner_cotizar{
-       margin:  auto;
-       filter: sepia(50%);
-       width: 100% ;
-       height: 100%;
-       max-width: 100%;
-       min-width: 400px;
-       max-height: 100%;
-       display: flex;
-       justify-content: center;
-       margin-left: 0;
-   }
-   /*
-   .cuadro_texto_cotizar{
-       width: 34%;
-       display: flex;
-       margin-right: 2rem;
-       
-   }*/
-   .texto_banner{  
-       color: beige;
-       text-justify:center;
-       font-family: 'Mooli', sans-serif;
-       font-size: 0;
-       margin: 0 auto;
-       display: flex;
-       text-align: center;
-       width: 100%; 
-       }
-      
-   }
-   
-
-@media only screen and ((min-width:769px) and (max-width:1024px)){
-    .banner{
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       gap: 2px 18rem;
-       width: 100%;
-       height: 100%;
-       background-color: #786b5e ;
-       max-width: 1200px;
-       margin:  auto;
-       flex-wrap: wrap;
-       margin-top: 5rem;
-   }
-   
-   .cuadro_imagen{
-       width: 100%;
-       margin-left: 0;
-       
-      }
-   
-   
-   .imagen_banner_cotizar{
-       margin:  auto;
-       filter: sepia(50%);
-       width: 100% ;
-       height: 100%;
-       max-width: 100%;
-       min-width: 400px;
-       max-height: 100%;
-       display: flex;
-       justify-content: center;
-       margin-left: 0;
-   }
-   /*
-   .cuadro_texto_cotizar{
-       width: 34%;
-       display: flex;
-       margin-right: 2rem;
-   }
-   */
-   .texto_banner{  
-       color: beige;
-       text-justify:center;
-       font-family: 'Mooli', sans-serif;
-       font-size: 0;
-       margin: 0 auto;
-       display: flex;
-       text-align: center;
-       width: 100%; 
-       }
-   }
-
-@media only screen and ((min-width:1025px)){
-    .banner{
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       gap: 2px 18rem;
-       width: 100%;
-       height: 100%;
-       background-color: #786b5e ;
-       max-width: 1200px;
-       margin:  auto;
-       flex-wrap: wrap;
-       margin-top: 5rem;
-   }
-   
-   .cuadro_imagen{
-       width: 49%;
-       margin-left: 0;
-       
-      }
-   
-   
-   .imagen_banner_cotizar{
-       margin:  auto;
-       filter: sepia(50%);
-       width: 100% ;
-       height: 100%;
-       max-width: 100%;
-       min-width: 400px;
-       max-height: 100%;
-       display: flex;
-       justify-content: center;
-       margin-left: 0;
-   }
-   
-   .cuadro_texto_cotizar{
-       width: 34%;
-       display: flex;
-       margin-right: 2rem;
-       
-   
-   }
-   .texto_banner{  
-       color: beige;
-       text-justify:center;
-       font-family: 'Mooli', sans-serif;
-       font-size: 2rem;
-       margin: 0 auto;
-       display: flex;
-       text-align: center;
-       width: 100%; 
-       }
-   }
-
-
-
-
-
-
-
-
-
-.formulario{
-    max-width: 1200px;
-    margin: auto;
-}
-
-
-
-.titulo_cotizar{
+    width: 100%;
+  }
+  .contenedor_finanzas {
     display: flex;
     justify-content: center;
-    font-family: 'Mooli', sans-serif;
-}
-
-
-
-
-/*pagina formulario*/
-
-
-
-/*
-
-.contenedro-imagen{
     align-items: center;
+    gap: 10rem;
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    max-height: 1000px;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
 }
-*/
-
-.frase-imagen{
-    font-size: 3rem;    
-}
-
-
-
-
-/*pagina finanzas*/
-
-
-@media only screen and (max-width:768px){
-    .banner_finanzas{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2px 18rem;
-        width: 100%;
-        height: 100%;
-        background-color: #414c3b ;
-        margin:  auto;
-        flex-wrap: wrap;
-        margin-top: 7rem;
-    }
-
-    .cuadro_imagen_finanzas{
-        width: 100%;
-        margin-left: 0;
-    }
-
-
-    .imagen_finanzas{
-        margin:  auto;
-        filter: sepia(50%);
-        width: 100% ;
-        height: 100%;
-        max-width: 100%;
-        min-width: 400px;
-        max-height: 100%;
-        display: flex;
-        justify-content: center;
-        margin-left: 0;
-    }
-    /*
-    .contenedor_texto_banner{
-        width: 33%;
-        display: flex;
-        margin-right: 2rem;
-
-    }
-    */
-    .texto_banner_finanzas{  
-        color: beige;
-        text-justify:center;
-        font-family: 'Mooli', sans-serif;
-        font-size: 0;
-        margin: 0 auto;
-        display: flex;
-        text-align: center;
-        width: 100%; 
-        }
-
-
-    .contenedor_finanzas{
-        display: flex;
-        justify-content: center;
-        gap: 10rem;
-        align-items: center;
-    /* margin: 5% 10% 5% 10%;*/
-        width: 100%;
-        height: 100%;
-        max-width: 1200px;
-        max-height: 1000px;  
-        margin:  auto;  
-        margin-top: 10%;
-        margin-bottom: 10%;
-        flex-wrap: wrap;
-    }
+.parrafo_finanzas {
+  border: 2px solid #786b5e;
+  background-color: #414c3b;
+  width: 30rem;
+  max-width: 1200px;
+  height: 200px;
+  font-size: 2.1rem;
+  font-family: "Mooli", sans-serif;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: beige;
+  padding: 5% 5% 5% 5%;
+  margin: 0 auto;
 }
 
-@media only screen and (min-width:769px) and (max-width:1024px){
-    .banner_finanzas{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2px 18rem;
-        width: 100%;
-        height: 100%;
-        background-color: #414c3b ;
-        max-width: 1200px;
-        margin:  auto;
-        flex-wrap: wrap;
-        margin-top: 5rem;
-    }
-
-    .cuadro_imagen_finanzas{
-        width: 100%;
-        margin-left: 0;
-    }
-
-
-    .imagen_finanzas{
-        margin:  auto;
-        filter: sepia(50%);
-        width: 100% ;
-        height: 100%;
-        max-width: 100%;
-        min-width: 400px;
-        max-height: 100%;
-        display: flex;
-        justify-content: center;
-        margin-left: 0;
-    }
-    /*
-    .contenedor_texto_banner{
-        width: 33%;
-        display: flex;
-        margin-right: 2rem;
-
-    }
-    */
-    .texto_banner_finanzas{  
-        color: beige;
-        text-justify:center;
-        font-family: 'Mooli', sans-serif;
-        font-size: 0;
-        margin: 0 auto;
-        display: flex;
-        text-align: center;
-        width: 100%; 
-        }
-
-
-    .contenedor_finanzas{
-        display: flex;
-        justify-content: center;
-        gap: 10rem;
-        align-items: center;
-    /* margin: 5% 10% 5% 10%;*/
-        width: 100%;
-        height: 100%;
-        max-width: 1200px;
-        max-height: 1000px;  
-        margin:  auto;  
-        margin-top: 10%;
-        margin-bottom: 10%;
-        flex-wrap: wrap;
-    }
+.parrafo_finanzas:hover {
+  color: #c6a664;
 }
 
-
-
-@media only screen and (min-width:1025px){
-    .banner_finanzas{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2px 18rem;
-        width: 100%;
-        height: 100%;
-        background-color: #414c3b ;
-        max-width: 1200px;
-        margin:  auto;
-        flex-wrap: wrap;
-        margin-top: 5rem;
-    }
-
-    .cuadro_imagen_finanzas{
-        width: 50%;
-        margin-left: 0;
-    }
-
-
-    .imagen_finanzas{
-        margin:  auto;
-        filter: sepia(50%);
-        width: 100% ;
-        height: 100%;
-        max-width: 600px;
-        min-width: 400px;
-        max-height: 400px;
-        display: flex;
-        justify-content: center;
-        margin-left: 0;
-    }
-
-    .contenedor_texto_banner{
-        width: 33%;
-        display: flex;
-        margin-right: 2rem;
-
-    }
-    .texto_banner_finanzas{  
-        color: beige;
-        text-justify:center;
-        font-family: 'Mooli', sans-serif;
-        font-size: 2rem;
-        margin: 0 auto;
-        display: flex;
-        text-align: center;
-        width: 100%; 
-        }
-
-
-    .contenedor_finanzas{
-        display: flex;
-        justify-content: center;
-        gap: 10rem;
-        align-items: center;
-    /* margin: 5% 10% 5% 10%;*/
-        width: 100%;
-        height: 100%;
-        max-width: 1200px;
-        max-height: 1000px;  
-        margin:  auto;  
-        margin-top: 10%;
-        margin-bottom: 10%;
-        flex-wrap: wrap;
-    }
-}
-
-
-
-.parrafo_finanzas{
-    border: 2px solid #786b5e ;
-    background-color: #414c3b;
-    width: 30rem;
-    max-width: 1200Px;
-    height: 200px;
-    font-size: 2.1rem;
-    font-family: 'Mooli', sans-serif;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    color:beige;
-    padding: 5% 5% 5% 5% ;
-    margin: 0 auto;
-}
-
-.parrafo_finanzas:hover{
-    color:#c6a664;
-
-}
+/*# sourceMappingURL=style.css.map */

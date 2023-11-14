@@ -1,0 +1,23 @@
+
+@media screen and (max-width: 578px){
+    .titulo{
+        font-family: 'Mooli', sans-serif;
+        font-size: 2rem;
+        text-align: center;
+        margin:  auto;
+        margin-top: 2.5%;
+        max-width: 580px;
+}
+
+}
+
+@media screen and (min-width: 579px){
+    .titulo{
+        font-family: 'Mooli', sans-serif;
+        font-size: 3.5rem;
+        text-align: center;
+        margin:  auto;
+        margin-top: 5%;
+        max-width: $ancho-max;
+    }
+}
