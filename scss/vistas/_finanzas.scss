@@ -47,7 +47,13 @@
         margin:  auto;  
         margin-top: 10%;
         margin-bottom: 10%;
+    
+        &-ubicacion_finanzas{
+            margin-bottom: 2rem;
+        }
     }
+
+    
 }
 
 @media only screen and (min-width:769px) and (max-width:1176px){
@@ -59,6 +65,7 @@
         max-width: $ancho-max;
         margin:  auto;
         margin-top: 5rem;
+        
     }
 
     .cuadro_imagen_finanzas{
@@ -99,6 +106,10 @@
         margin:  auto;  
         margin-top: 10%;
         margin-bottom: 10%;
+
+        &-ubicacion_finanzas{
+            margin-bottom: 2rem;
+        }
     }
 }
 

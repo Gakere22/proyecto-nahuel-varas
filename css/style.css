@@ -45,7 +45,7 @@ a {
     font-size: 2rem;
     text-align: center;
     margin: auto;
-    margin-top: 2.5%;
+    margin-top: 2rem;
     max-width: 580px;
   }
 }
@@ -59,17 +59,29 @@ a {
     max-width: 1200px;
   }
 }
+.card1 {
+  border-color: beige;
+  background-color: beige;
+  border-radius: 20%;
+}
+
 .card-body {
   background-color: #786b5e;
   width: 18rem;
   height: 18rem;
+  transition: background-color 1s ease-in-out;
+}
+
+.card-body:hover {
+  background-color: #c6a664;
+  border-style: inset;
+  border-color: grey;
 }
 
 .nombre_tarjeta {
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: beige;
-  border-bottom: 1px solid beige;
-  margin-top: 5%;
+  margin-top: 7%;
 }
 
 .card-text {
@@ -89,7 +101,7 @@ a {
 }
 
 .formulario {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
 }
 
@@ -153,8 +165,33 @@ a {
 
 .cuerpo {
   background-color: #ece2c6;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
 }
 
+/*
+@media only screen and (max-width: 768px){
+.cuerpo{
+    background-color: $color-base;
+    width: 100%;
+    max-width: $ancho-max;
+    margin: auto;
+}
+
+}
+
+
+@media only screen and (min-width: 769px){
+    .cuerpo{
+        background-color: $color-base;
+        width: 100%;
+        max-width: $ancho-max;
+        margin: auto;
+    }
+
+}
+*/
 .encabezado {
   display: flex;
   justify-content: center;
@@ -268,6 +305,10 @@ a {
   margin: 0 auto;
   flex-wrap: wrap;
 }
+.pie_pagina-mapa {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 .pie_pagina-redes {
   display: flex;
   justify-content: center;
@@ -275,10 +316,16 @@ a {
   flex-wrap: wrap;
   gap: 2rem;
 }
-.pie_pagina-redes-facebook, .pie_pagina-redes-whatsapp, .pie_pagina-redes-instagram {
-  font-size: 2.8rem;
-  color: white;
-  border-radius: 9px;
+.pie_pagina-redes-instagram, .pie_pagina-redes-facebook, .pie_pagina-redes-whatsapp {
+  border-radius: 12px;
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.pie_pagina-redes-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
 .pie_pagina-redes-facebook {
   background-color: rgb(37, 37, 157);
@@ -286,8 +333,11 @@ a {
 .pie_pagina-redes-whatsapp {
   background-color: #00bb2d;
 }
-.pie_pagina-redes-instagram {
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+.pie_pagina-redes-instagram-item, .pie_pagina-redes-facebook-item, .pie_pagina-redes-whatsapp-item {
+  font-size: 2.8rem;
+  color: white;
+  position: relative;
+  bottom: 3%;
 }
 
 @media screen and (max-width: 578px) {
@@ -430,6 +480,9 @@ a {
   }
 }
 @media only screen and ((min-width: 769px) and (max-width: 1176px)) {
+  .encabezado {
+    max-width: 1176px;
+  }
   .banner {
     display: flex;
     justify-content: center;
@@ -439,7 +492,7 @@ a {
     width: 100%;
     height: 100%;
     background-color: #786b5e;
-    max-width: 1200px;
+    max-width: 1176px;
     margin: auto;
     margin-top: 5rem;
   }
@@ -527,6 +580,18 @@ a {
   font-family: "Mooli", sans-serif;
 }
 
+.contenedor-titulo {
+  margin: auto;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.contenedor-formulario-cotizar {
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 3rem;
+}
+
 .frase-imagen {
   font-size: 3rem;
 }
@@ -585,6 +650,9 @@ a {
     margin-top: 10%;
     margin-bottom: 10%;
   }
+  .contenedor_finanzas-ubicacion_finanzas {
+    margin-bottom: 2rem;
+  }
 }
 @media only screen and (min-width: 769px) and (max-width: 1176px) {
   .banner_finanzas {
@@ -639,6 +707,9 @@ a {
     margin: auto;
     margin-top: 10%;
     margin-bottom: 10%;
+  }
+  .contenedor_finanzas-ubicacion_finanzas {
+    margin-bottom: 2rem;
   }
 }
 @media only screen and (min-width: 1177px) {

@@ -1,13 +1,27 @@
+.card1{
+    border-color: $color-base2;
+    background-color: $color-base2;
+    border-radius: 20%;
+}
+
 .card-body {
-    background-color: #786b5e;
+    background-color: $color-base3;
     width: 18rem;
     height: 18rem;
+    transition: background-color 1s ease-in-out;
+}
+.card-body:hover{
+    background-color:$color-encabezado;
+    border-style: inset;
+    border-color: $color-base6;
+    
+    
 }
 .nombre_tarjeta{
-    font-size: 3rem;
+    font-size: 3.5rem;
     color:beige;
-    border-bottom: 1px solid  beige;
-    margin-top: 5%;
+   // border-bottom: 1px solid  beige;
+    margin-top: 7%;
 }
 
 .card-text{
